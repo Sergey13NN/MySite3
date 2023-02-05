@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Бутстреп -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Фавикон сайта -->
+    <link rel="shortcut icon" href="./css/favicon.ico" type="image/x-icon" />
+    <!-- Тайтл страницы в браузере -->
+    <title>Мои фото</title>
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Заголовок -->
+            <h1 class="text-center text-white">Добро пожаловать на мой сайт</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="./img/SB2.png" alt="Logo" width="65"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Переключатель навигации"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/"
+                style="color: rgb(9, 106, 9); text-decoration: none"
+                >Главная</a
+              >
+            </li>
+            <!-- 1 стр -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="page1.html"
+                style="color: rgb(22, 193, 22); text-decoration: none"
+                >Моё портфолио</a
+              >
+            </li>
+            <!-- 2 стр -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="page2.html"
+                style="color: rgb(9, 106, 9)"
+                >Мои фото</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Конец Навигация -->
+
+    <!-- Карточки с фото -->
+    <div class="container my-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-1">
+        <div class="col mb-5">
+          <div class="card card-p" style="width: 18rem">
+            <img
+              src="./img/s1.jpg"
+              class="card-img-top"
+              alt="Макет сайта в Figma"
+              style="margin-bottom: 20px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Макет сайта в Figma</h5>
+              <p class="card-text">Ватермарка в Photoshop</p>
+              <a href="./img/s1.jpg" target="_blank" class="btn btn-success"
+                >Открыть оригинальное изображение</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-p" style="width: 18rem">
+            <img
+              src="./img/p2.jpg"
+              class="card-img-top"
+              alt="Макет карточки в Figma"
+              style="margin-bottom: 20px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Макет карточки в Figma</h5>
+              <p class="card-text">Макет малой формы в Figma</p>
+              <a href="./img/p2.jpg" target="_blank" class="btn btn-success"
+                >Открыть оригинальное изображение</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-p" style="width: 18rem">
+            <img
+              src="./img/p3.jpg"
+              class="card-img-top"
+              alt="Моя страничка в Confluence"
+              style="margin-bottom: 50px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Confluence</h5>
+              <p class="card-text">Моя страничка в Confluence</p>
+              <a href="./img/p3.jpg" target="_blank" class="btn btn-success"
+                >Открыть оригинальное изображение</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-p" style="width: 18rem">
+            <img
+              src="./img/b1.jpg"
+              class="card-img-top"
+              alt="Баг на сайте"
+              style="margin-bottom: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Баг на сайте</h5>
+              <p class="card-text">Скрин бага</p>
+              <a href="./img/b1.jpg" target="_blank" class="btn btn-success"
+                >Открыть оригинальное изображение</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-p" style="width: 18rem">
+            <img
+              src="./img/b2.jpg"
+              class="card-img-top"
+              alt="Баг на сайте"
+              style="margin-bottom: 80px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Баг на сайте</h5>
+              <p class="card-text">Скрин бага</p>
+              <a href="./img/b2.jpg" target="_blank" class="btn btn-success"
+                >Открыть оригинальное изображение</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец Карточки с фото -->
+
+    <!-- Футер -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a
+              href="https://vk.com/sb130789"
+              target="_blank"
+              class="btn btn-outline-success"
+              style="margin: auto 25px"
+            >
+              <i class="icon-vkontakte"></i>
+            </a>
+            <a
+              href="https://github.com/Sergey13NN"
+              target="_blank"
+              class="btn btn-outline-success"
+              style="margin: auto 25px"
+            >
+              <i class="icon-github-circled"></i>
+            </a>
+            <a
+              href="mailto:sbnn130789@mail.ru?subject=Тестирование ПО&body=Здравствуйте, Сергей! "
+              target="_blank"
+              class="btn btn-outline-success"
+              style="margin: auto 25px"
+            >
+              <i class="icon-mail-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Конец футера -->
+  </body>
+</html>

@@ -1,0 +1,233 @@
+:root {
+  --color1: #02c702;
+  --color2: #136b15;
+}
+
+/* Цвета */
+.color1 {
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.bg1 {
+  background-color: var(--color1);
+}
+
+.bg2 {
+  background-color: var(--color2);
+}
+
+/* Стили секции / хедера / футера */
+
+section {
+  padding: 10px 0;
+}
+
+header {
+  padding: 50px 0;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+header,
+footer {
+  background: url(../img/pattern.png), var(--color2);
+  background: url(../img/pattern.png),
+    -moz-linear-gradient(left, var(--color2) 0%, var(--color1) 100%);
+  background: url(../img/pattern.png),
+    -webkit-linear-gradient(left, var(--color2) 0%, var(--color1) 100%);
+  background: url(../img/pattern.png),
+    linear-gradient(to right, var(--color2) 0%, var(--color1) 100%);
+  filter: url(../img/pattern.png),
+    progid:
+      DXImageTransform.Microsoft.gradient(
+        startColorstr=var(--color2),
+        endColorstr=var(--color1),
+        GradientType=1
+      );
+  background-size: contain;
+}
+
+/* Размер шрифта в Навигации */
+.nav-item {
+  font-size: 25px;
+}
+
+/* фон синеватый для 2 зон*/
+.my_skill,
+.me {
+  background-color: aliceblue;
+}
+
+/* Адаптивная картинка */
+
+/* Блоки текста справа от фото */
+.izo h5 {
+  padding: 30px;
+  border: 3px solid var(--color1);
+  border-radius: 1em;
+  margin: 15px auto;
+}
+
+/* Скруглённое фото */
+.izo img {
+  border-radius: 2.5em;
+}
+
+/* Аккордеон */
+/* Все чеки в предвыбранном состоянии без наведения */
+.accordion-button:not(.collapsed) {
+  color: rgb(3, 55, 7);
+  border-radius: 5%;
+  background-color: rgb(177, 239, 179);
+  box-shadow: 0 0 0 0.25rem var(--color2);
+}
+/* Чек, к-й нажат - 1 штука */
+.accordion-button:focus {
+  border-color: var(--color1);
+  box-shadow: 0 0 0 0.25rem var(--color2);
+}
+
+/* Иконки в Дополнительно */
+
+/* Цвет и размер иконки (нумер список и др.) */
+.dopoln i {
+  font-size: 30px;
+  color: var(--color2);
+}
+
+/* Этот класс у тега i, к-й в круге - Чтобы иконка в круге была по центру */
+.icon-list-numbered:before {
+  width: 30px;
+  height: 30px;
+  content: "\f0cb";
+}
+
+/* Круг вокруг иконки */
+.bs_circle {
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Линия под иконкой в круге */
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+  margin: 15px auto 30px;
+}
+
+/* Страница 2 */
+
+.col {
+  padding: 0.7em;
+}
+
+/* Карточки */
+.card {
+  border-radius: 1em;
+  border-color: var(--color2);
+  text-align: center;
+  padding: 0.7em;
+  margin: auto;
+}
+
+/* Карточки при наведении */
+.card:hover {
+  background-color: rgba(98, 225, 170, 0.1);
+}
+
+/* Картинка */
+.card img {
+  border-radius: 1em;
+  width: 95%;
+  margin: auto;
+}
+
+/* Об авторе */
+.me {
+  padding-bottom: 10px;
+}
+
+.me p {
+  padding: 15px;
+  text-align: center;
+}
+
+.me img {
+  border-radius: 7%;
+  max-width: 250px;
+}
+
+.card-p {
+  box-shadow: 0 2px 5px 0 #136b15;
+  height: 400px;
+}
+
+.card-p img {
+  max-height: 180px;
+  max-width: max-content;
+}
+
+/* .card-body {
+  align-items: flex-end;
+} */
+
+/* Весь текст описания свыше 50px прячется */
+.card-body p {
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.card-body h5,
+p,
+a {
+}
+
+/* Страничка Опыт работы по иконке */
+.opyt,
+.obraz h2 {
+  padding: 50px;
+}
+.col-12 h3 {
+  padding: 20px;
+  border: 3px solid var(--color1);
+}
+
+ul {
+  color: var(--color2);
+  font-size: larger;
+}
+
+li {
+  padding: 10px;
+}
+
+/* Страничка Образование по иконке */
+.obraz h4 {
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* Страничка программ по иконке */
+/* Заголовок */
+.prog h2 {
+  padding: 50px;
+}
+
+/* Рамки Программы */
+.prog h5 {
+  padding: 50px;
+  border: 3px solid var(--color1);
+}
